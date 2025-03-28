@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Jawanjal - DevOps Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        .container {
+            text-align: center;
+            max-width: 900px;
+            padding: 30px;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1.5s ease-in-out;
+            margin: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #00c9ff;
+            font-size: 2.5rem;
+        }
+        
+        h4 { text-align: left; margin: 5px 0; }
+
+        p {
+            font-size: 1.2rem;
+            color: #f5f5f5;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00c9ff;
+            margin-bottom: 15px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #00c9ff;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+            width: 200px;
+            gap: 10px;
+        }
+        .social-links a i {
+            font-size: 1.5rem;
+        }
+        .social-links a:hover {
+            background: #f5f5f5;
+            color: #00c9ff;
+        }
+        .project {
+            background: #2e3b4e;
+            padding: 12px;
+            margin: 6px 0;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slider img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin: 5px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img.jpg" alt="Profile Image" class="profile-img">
+        <h1>Aditya Jawanjal</h1>
+        <p>DevOps Engineer | Cloud Enthusiast</p>
+        <div class="social-links">
+            <a href="https://github.com/AdiJawanjal" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/aditya-jawanjal-b06ab5230/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="jawanjaladi1@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://x.com/Adi_Jawanjal_" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+        <h2>PROJECTS</h2>
+        <div class="project">
+            <h3>PROJECT 1 : Build and Deployed Web Application using Pipeline</h3>
+            <h4>🔹 Terraform HCP for provisioning EC2 instances <br>
+                🔹 Jenkins CI/CD pipeline to automate builds & deployments <br>
+                🔹 Maven & Nexus for artifact management <br>
+                🔹 Tomcat Server for deployment <br>
+                🔹 Grafana & Prometheus for monitoring <br>
+                <br>
+                
+                This project helped me gain hands-on experience in infrastructure automation, CI/CD, and observability. Excited to keep learning and growing in the DevOps world!</h4>
+            <div class="slider-container">
+                <button class="prev" onclick="moveSlide(-1, 'slider0')">&#10094;</button>
+                <div class="slider" id="slider0">
+                    <img src="P1 Img/0.jpg" alt="Project 1 Image 1">
+                    <img src="P1 Img/1.png" alt="Project 1 Image 2">
+                    <img src="P1 Img/2.png" alt="Project 1 Image 3">
+                    <img src="P1 Img/3.png" alt="Project 1 Image 4">
+                    <img src="P1 Img/4.png" alt="Project 1 Image 5">
+                    <img src="P1 Img/5.png" alt="Project 1 Image 6">
+                    <img src="P1 Img/6.png" alt="Project 1 Image 7">
+                    <img src="P1 Img/7.png" alt="Project 1 Image 8">
+                    <img src="P1 Img/8.png" alt="Project 1 Image 9">
+                </div>
+                <button class="next" onclick="moveSlide(1, 'slider0')">&#10095;</button>
+            </div>
+        </div>
+        <div class="project">
+            <h3>PROJECT 2 : Successfully Deployed My Portfolio Website on Kubernetes using Kops & Docker!</h3>
+            <h4>I recently built a Kubernetes cluster from scratch and deployed my portfolio website using Kops, Docker, and Git. This hands-on project deepened my understanding of container orchestration and deployment automation. <br>
+
+                🔹 Kops: Created a Kubernetes cluster on AWS with one control plane and two worker nodes.<br>
+                🔹 Git: Developed my portfolio site and managed code using GitHub.<br>
+                🔹 Docker: Containerized the app and pushed the image to Docker Hub.<br>
+                🔹 NodePort: Deployed the app on Kubernetes and exposed it via NodePort (next time, I’ll use a Load Balancer for better security).<br>
+                <br>
+                Key Learnings:<br>
+                ✅ Kubernetes cluster setup with Kops<br>
+                ✅ Docker containerization<br>
+                ✅ Kubernetes deployment & service exposure<br>
+                ✅ Git-based version control<br>
+                <br>
+                This project was a great learning experience, and I’m excited to dive deeper into DevOps! 🚀</h4>
+            <div class="slider-container">
+                <button class="prev" onclick="moveSlide(-1, 'slider1')">&#10094;</button>
+                <div class="slider" id="slider1">
+                    <img src="P2 Img/1.png" alt="Project 2 Image 1">
+                    <img src="P2 Img/2.png" alt="Project 2 Image 2">
+                    <img src="P2 Img/3.png" alt="Project 2 Image 3">
+                    <img src="P2 Img/4.png" alt="Project 2 Image 4">
+                </div>
+                <button class="next" onclick="moveSlide(1, 'slider1')">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function moveSlide(direction, sliderId) {
+            const slider = document.getElementById(sliderId);
+            const images = slider.getElementsByTagName('img');
+            const totalImages = images.length;
+            let index = parseInt(slider.dataset.index || 0);
+            index = (index + direction + totalImages) % totalImages;
+            slider.dataset.index = index;
+            slider.style.transform = `translateX(${-index * images[0].width}px)`;
+        }
+    </script>
+</body>
+</html>
